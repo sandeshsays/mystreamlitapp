@@ -32,8 +32,9 @@ with st.form(key='my_form'):
     submit_button = st.form_submit_button(label='Submit')
 
 if submit_button:
+    st.header('Household Summary')
     # st.dataframe(df)
-    st.dataframe(df[['full_name_np','father','mother','province','district','ward','house_no','plus_code','_geolocation']])
+    st.dataframe(df[['full_name_np','province','district','localbody','ward','house_no','plus_code','_geolocation']])
 
 
 # with dataset:
